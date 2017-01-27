@@ -23,7 +23,9 @@
 				Margin="0, 0, 0, 20"
 				Grid.Row="0"
 				Grid.ColumnSpan="2" 
-        HorizontalOptions="CenterAndExpand"/>
+        HorizontalOptions="CenterAndExpand"
+        FontFamily="GochiHand-Regular"
+        FontSize="45"/>
 			<Entry x:Name="UserName"
 				Placeholder="Username"
 				Margin="0, 0, 0, 10"
@@ -44,13 +46,16 @@
       <Label Text="Don't have an account?"
         TextColor="Pink"
         Grid.Row="4"
-        Grid.Column="0"/>
-      <Button x:Name="NoAccountButton" 
+        Grid.Column="0"
+        VerticalTextAlignment="Center"/>
+      <Button x:Name="CreateAccountButton" 
 				Text="Create Account"
         TextColor="Fuchsia"
 				IsEnabled="False"
 				Grid.Row="4"
-				Grid.Column="1" />
+				Grid.Column="1" 
+        BackgroundColor="Transparent"
+        Command="NavigateToCreateAccountPageCommand"/>
 			
 		</Grid>
 	</ScrollView>
