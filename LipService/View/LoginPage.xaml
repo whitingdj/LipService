@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LipService.LoginPage">
-	<ContentPage.Content>
-		<StackLayout BackgroundColor="Black" Padding="20" Spacing="20">
-				<Label Text="Lip Service" 
-					TextColor="#ff056a"
-					Margin="10" 
-					HorizontalOptions="Center"/>
-				<Entry Placeholder="Username" />
-				<Entry Placeholder="Password" />
-				<Button Text="Login" />
-				<Label Text="Don't have an account?" 
-					TextColor="White"
-					HorizontalOptions="Center"/>
-				<Button Text="Create Account" />
-		</StackLayout>
-	</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  x:Class="LipService.LoginPage" 
+  Padding="20, 20, 20, 20">
+	<ScrollView>
+		<Grid Padding="0, 80, 0, 0" HorizontalOptions="Center">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+
+			<Label Text="Lip Service"
+        TextColor="Fuchsia"
+				Margin="0, 0, 0, 20"
+				Grid.Row="0"
+				Grid.ColumnSpan="2" 
+        HorizontalOptions="CenterAndExpand"/>
+			<Entry x:Name="UserName"
+				Placeholder="Username"
+				Margin="0, 0, 0, 10"
+				Grid.Row="1"
+				Grid.ColumnSpan="2"/>
+			<Entry x:Name="Password"
+				Placeholder="Password"
+				IsPassword="True"
+				Margin="0, 0, 0, 10"
+				Grid.Row="2"
+				Grid.ColumnSpan="2" />
+			<Button x:Name="Submit" 
+				Text="Login"
+        TextColor="Fuchsia"
+				IsEnabled="False"
+				Grid.Row="3"
+				Grid.ColumnSpan="2" />
+      <Label Text="Don't have an account?"
+        TextColor="Pink"
+        Grid.Row="4"
+        Grid.Column="0"/>
+      <Button x:Name="NoAccountButton" 
+				Text="Create Account"
+        TextColor="Fuchsia"
+				IsEnabled="False"
+				Grid.Row="4"
+				Grid.Column="1" />
+			
+		</Grid>
+	</ScrollView>
 </ContentPage>

@@ -1,10 +1,8 @@
 ﻿using System;
 namespace LipService {
-	public class StormpathUserService : IUserService{
+	public class StormpathUserService {
 		public StormpathUserService() {
-			public void Create(){
-				
-			}
+			
 		}
 	}
 }
