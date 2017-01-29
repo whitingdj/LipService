@@ -37,21 +37,21 @@
 				Margin="0, 0, 0, 10"
 				Grid.Row="2"
 				Grid.ColumnSpan="2" />
-			<Button x:Name="Submit" 
+			<Button x:Name="Login" 
 				Text="Login"
-        		TextColor="Fuchsia"
+        		TextColor="White"
+				BackgroundColor="Fuchsia"
 				IsEnabled="False"
 				Grid.Row="3"
 				Grid.ColumnSpan="2" />
       		<Label Text="Don't have an account?"
-      		  	TextColor="Pink"
       		  	Grid.Row="4"
       		  	Grid.Column="0"
-      		  	VerticalTextAlignment="Center"/>
+      		  	VerticalTextAlignment="Center"
+				/>
       		<Button x:Name="CreateAccountButton" 
 			  	Text="Create Account"
       		  	TextColor="Fuchsia"
-			  	IsEnabled="False"
 			  	Grid.Row="4"
 			  	Grid.Column="1" 
       		  	BackgroundColor="Transparent"

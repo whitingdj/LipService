@@ -44,11 +44,12 @@
 		Grid.Column="0" />
       <Button x:Name="SignUp"
 		Text="Sign Up"
-        TextColor="Fuchsia"
-		IsEnabled="False"
+        TextColor="White"
+		IsEnabled="false"
 		Grid.Row="5"
 		Grid.Column="0" 
-        Command="{Binding CreateAccountCommand}"/>
+        Command="{Binding CreateAccountCommand}"
+		BackgroundColor="Fuchsia"/>
     </Grid>
       </ScrollView>
 </ContentPage>
