@@ -1,7 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LipService.View.CreateAccountPage">
+             x:Class="LipService.View.CreateAccountPage"
+			 Padding="20, 20, 20, 20">
+
   <ScrollView>
     <Grid Padding="0, 80, 0, 0" HorizontalOptions="Center">
       <Grid.ColumnDefinitions>
@@ -13,35 +15,39 @@
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
       <Label Text="Create Account"
         TextColor="Fuchsia"
-				Margin="0, 0, 0, 20"
-				Grid.Row="0"
-				Grid.Column="0"
+		Margin="0, 0, 0, 20"
+		Grid.Row="0"
+		Grid.Column="0"
         HorizontalOptions="CenterAndExpand"
         FontFamily="GochiHand-Regular"
         FontSize="45"/>
       <Label Text="Username"
-        FontSize="35"/>
+        FontSize="20"
+		Grid.Row="1"/>
       <Entry x:Name="UserName"
-				Margin="0, 0, 0, 10"
-				Grid.Row="1"
-				Grid.Column="0"/>
+		Margin="0, 0, 0, 10"
+		Grid.Row="2"
+		Grid.Column="0"/>
       <Label Text="Password"
-        FontSize="35"/>
+        FontSize="20"
+		Grid.Row="3"		/>
       <Entry x:Name="Password"
-				IsPassword="True"
-				Margin="0, 0, 0, 10"
-				Grid.Row="2"
-				Grid.Column="0" />
+		IsPassword="True"
+		Margin="0, 0, 0, 10"
+		Grid.Row="4"
+		Grid.Column="0" />
       <Button x:Name="SignUp"
-				Text="Login"
+		Text="Sign Up"
         TextColor="Fuchsia"
-				IsEnabled="False"
-				Grid.Row="3"
-				Grid.ColumnSpan="0" 
+		IsEnabled="False"
+		Grid.Row="5"
+		Grid.Column="0" 
         Command="{Binding CreateAccountCommand}"/>
     </Grid>
       </ScrollView>

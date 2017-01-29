@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-  x:Class="LipService.LoginPage" 
-  Padding="20, 20, 20, 20">
+  			 x:Class="LipService.LoginPage" 
+ 			 Padding="20, 20, 20, 20">
 	<ScrollView>
 		<Grid Padding="0, 80, 0, 0" HorizontalOptions="Center">
 			<Grid.ColumnDefinitions>
@@ -19,13 +19,13 @@
 			</Grid.RowDefinitions>
 
 			<Label Text="Lip Service"
-        TextColor="Fuchsia"
+        		TextColor="Fuchsia"
 				Margin="0, 0, 0, 20"
 				Grid.Row="0"
 				Grid.ColumnSpan="2" 
-        HorizontalOptions="CenterAndExpand"
-        FontFamily="GochiHand-Regular"
-        FontSize="45"/>
+        		HorizontalOptions="CenterAndExpand"
+        		FontFamily="GochiHand-Regular"
+        		FontSize="45"/>
 			<Entry x:Name="UserName"
 				Placeholder="Username"
 				Margin="0, 0, 0, 10"
@@ -39,23 +39,23 @@
 				Grid.ColumnSpan="2" />
 			<Button x:Name="Submit" 
 				Text="Login"
-        TextColor="Fuchsia"
+        		TextColor="Fuchsia"
 				IsEnabled="False"
 				Grid.Row="3"
 				Grid.ColumnSpan="2" />
-      <Label Text="Don't have an account?"
-        TextColor="Pink"
-        Grid.Row="4"
-        Grid.Column="0"
-        VerticalTextAlignment="Center"/>
-      <Button x:Name="CreateAccountButton" 
-				Text="Create Account"
-        TextColor="Fuchsia"
-				IsEnabled="False"
-				Grid.Row="4"
-				Grid.Column="1" 
-        BackgroundColor="Transparent"
-        Command="NavigateToCreateAccountPageCommand"/>
+      		<Label Text="Don't have an account?"
+      		  	TextColor="Pink"
+      		  	Grid.Row="4"
+      		  	Grid.Column="0"
+      		  	VerticalTextAlignment="Center"/>
+      		<Button x:Name="CreateAccountButton" 
+			  	Text="Create Account"
+      		  	TextColor="Fuchsia"
+			  	IsEnabled="False"
+			  	Grid.Row="4"
+			  	Grid.Column="1" 
+      		  	BackgroundColor="Transparent"
+      		    Command="NavigateToCreateAccountPageCommand"/>
 			
 		</Grid>
 	</ScrollView>
