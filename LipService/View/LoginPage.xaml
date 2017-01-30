@@ -55,7 +55,7 @@
 			  	Grid.Row="4"
 			  	Grid.Column="1" 
       		  	BackgroundColor="Transparent"
-      		    Command="NavigateToCreateAccountPageCommand"/>
+      		    Clicked="CreateAccountButton_Clicked"/>
 			
 		</Grid>
 	</ScrollView>

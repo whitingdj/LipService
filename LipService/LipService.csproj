@@ -48,7 +48,7 @@
     </Compile>
     <Compile Include="Model\User.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
-    <Compile Include="Services\StormpathUserService.cs" />
+    <Compile Include="ViewModel\StormpathUserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
