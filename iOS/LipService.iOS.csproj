@@ -101,9 +101,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
@@ -147,6 +144,15 @@
     <Reference Include="Stormpath.SDK.Core">
       <HintPath>..\packages\Stormpath.SDK.Core.0.96.0\lib\netstandard1.3\Stormpath.SDK.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Auth0Client.iOS">
+      <HintPath>..\Components\Auth0Client-0.5.0\lib\ios-unified\Auth0Client.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\Auth0Client-0.5.0\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.iOS">
+      <HintPath>..\Components\Auth0Client-0.5.0\lib\ios-unified\Xamarin.Auth.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LipService\LipService.csproj">
@@ -177,6 +183,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Auth0Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\GochiHand-Regular.ttf">
@@ -191,6 +198,12 @@
     <BundleResource Include="Resources\TabIcons\messages.png" />
     <BundleResource Include="Resources\TabIcons\messages_2x.png" />
     <BundleResource Include="Resources\TabIcons\messages_3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="Auth0Client">
+      <Version>0.5.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
