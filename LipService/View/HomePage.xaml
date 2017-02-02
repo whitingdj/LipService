@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:local="clr-namespace:LipService"
+		xmlns:pages="clr-namespace:LipService"
 		x:Class="LipService.HomePage">
-	
-	<ContentPage Title="Messages" Icon="messages.png">
-		<Label Text="message stuff" />
-	</ContentPage>
 
-	<ContentPage Title="Contacts" Icon="contacts.png">
-		<Label Text="message stuff" />
-	</ContentPage>
+	<NavigationPage Title="Messages" Icon="messages.png">
+		<x:Arguments>
+			<pages:MessagesPage />
+		</x:Arguments>
+	</NavigationPage>
 
-	<local:AccountPage Title="Account" Icon="account.png" />
+	<pages:ContactsPage Title="Contacts" Icon="contacts.png" />
+
+	<pages:AccountPage Title="Account" Icon="account.png" />
 
 	
 </TabbedPage>
