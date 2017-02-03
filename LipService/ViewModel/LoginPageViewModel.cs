@@ -13,11 +13,11 @@ namespace LipService.ViewModel {
 		public ICommand LoginAuthenticate { get; private set; }
 
 		public LoginPageViewModel() {
-			LoginAuthenticate = new Command(Authenticate);
+			
 		}
 
-		void Authenticate(string username, string password) {
-
+		public void Authenticate(string username, string password) {
+			throw new Exception("Not implemented");
 		}
 
 		public void Create(User user) {
