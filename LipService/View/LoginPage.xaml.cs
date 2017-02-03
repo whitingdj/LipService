@@ -7,7 +7,7 @@ using LipService.View;
 namespace LipService {
 	public partial class LoginPage : ContentPage {
 		public LoginPage() {
-			InitializeComponent();
+
 		}
 
 		async void CreateAccountButton_Clicked(object sender, System.EventArgs e) {
